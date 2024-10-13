@@ -50,3 +50,16 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+.vscode/
+
+*.tmp
+*.temp
+
+CMakeFiles/
+CMakeCache.txt
+
+*.log
+
+node_modules/
+
