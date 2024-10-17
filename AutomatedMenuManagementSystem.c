@@ -1,7 +1,6 @@
-// Restaurant Menu App
+// Automated Menu Management System 
 #include <stdio.h>
-//#include <stdio.h>
- 
+
 #define PIZZA_PRICE 17
 #define DRINK_PRICE 1
 #define SOUP_PRICE 8
