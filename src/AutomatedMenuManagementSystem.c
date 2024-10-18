@@ -4,6 +4,7 @@
 
 // Structure to track ordered quantities
 Order currentOrder = {0, 0, 0, 0}; // Initializing order counts to zero
+
 // Function declarations
 void showMenu();        // Displays the menu
 void handleOrder(int);  // Processes the user's choice
@@ -14,7 +15,11 @@ int main() {
     while (1) { // Infinite loop until user chooses to exit
         showMenu(); // Show the menu to the user
         printf("Your choice: ");
-        scanf("%d", &choice); // Get user input
+        if (scanf("%d", &choice) != 1) { // Get user input and check for errors
+            fprintf(stderr, "Error reading input\n");
+            while(getchar() != '\n'); // Clear the invalid input
+            continue; // Restart the loop
+        }
 
         if (choice == 5) { // If the user selects option 5 (exit)
             showTotal();    // Show the total bill
@@ -42,40 +47,60 @@ void handleOrder(int choice) {
     switch (choice) { // Process each menu item based on choice
         case 1: // If pizza is selected
             printf("How many pizzas would you like to order? ");
-            scanf("%d", &quantity); // Get quantity
-            if (quantity < 0) {     // Check for negative quantity
+            if (scanf("%d", &quantity) != 1) { // Get quantity and check for errors
+                fprintf(stderr, "Error reading input\n");
+                while(getchar() != '\n'); // Clear the invalid input
+                return; // Exit the function
+            }
+            if (quantity < 0) { // Check for negative quantity
                 printf("Invalid quantity! Please enter a positive number.\n");
                 return;
             }
             currentOrder.pizzaCount += quantity; // Update pizza count
             break;
+
         case 2: // If drink is selected
             printf("How many drinks would you like to order? ");
-            scanf("%d", &quantity); // Get quantity
+            if (scanf("%d", &quantity) != 1) { // Get quantity and check for errors
+                fprintf(stderr, "Error reading input\n");
+                while(getchar() != '\n'); // Clear the invalid input
+                return; // Exit the function
+            }
             if (quantity < 0) {
                 printf("Invalid quantity! Please enter a positive number.\n");
                 return;
             }
             currentOrder.drinkCount += quantity; // Update drink count
             break;
+
         case 3: // If soup is selected
             printf("How many soups would you like to order? ");
-            scanf("%d", &quantity); // Get quantity
+            if (scanf("%d", &quantity) != 1) { // Get quantity and check for errors
+                fprintf(stderr, "Error reading input\n");
+                while(getchar() != '\n'); // Clear the invalid input
+                return; // Exit the function
+            }
             if (quantity < 0) {
                 printf("Invalid quantity! Please enter a positive number.\n");
                 return;
             }
             currentOrder.soupCount += quantity; // Update soup count
             break;
+
         case 4: // If salad is selected
             printf("How many salads would you like to order? ");
-            scanf("%d", &quantity); // Get quantity
+            if (scanf("%d", &quantity) != 1) { // Get quantity and check for errors
+                fprintf(stderr, "Error reading input\n");
+                while(getchar() != '\n'); // Clear the invalid input
+                return; // Exit the function
+            }
             if (quantity < 0) {
                 printf("Invalid quantity! Please enter a positive number.\n");
                 return;
             }
             currentOrder.saladCount += quantity; // Update salad count
             break;
+
         default:
             printf("Invalid choice! Please try again.\n"); // Handle invalid input
     }
