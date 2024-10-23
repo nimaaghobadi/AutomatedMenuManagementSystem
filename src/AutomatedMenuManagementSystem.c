@@ -2,8 +2,6 @@
 #include <stdio.h> // Standard library for input/output functions (e.g., printf, scanf)
 #include "AutomatedMenuManagementSystem.h" // Custom header file containing declarations
 
-#define _CRT_SECURE_NO_WARNINGS
-
 // Structure to track ordered quantities
 Order currentOrder = {0, 0, 0, 0}; // Initializing order counts to zero
 // Function declarations
@@ -103,3 +101,4 @@ void showTotal() {
         printf("Thank you for your order!\n"); // Thank the user
     }
 }
+
