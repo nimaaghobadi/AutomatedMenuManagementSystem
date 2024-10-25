@@ -27,13 +27,13 @@ To install the Automated Menu Management System, please follow these steps:
    ```bash
    git clone https://github.com/nimaaghobadi/AutomatedMenuManagementSystem.git
 2. Navigate to the project directory:
-```bash
-  cd AutomatedMenuManagementSystem
-```
+   ```bash
+    cd AutomatedMenuManagementSystem
+   ```
 4. Compile the source code:
-```bash
-  make
-```
+  ```bash
+    make
+  ```
 
 ## Usage
 To compile and run the Automated Menu Management System, follow these steps:
