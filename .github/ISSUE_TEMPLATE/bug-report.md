@@ -2,7 +2,7 @@
 name: Bug Report
 about: Submit a detailed report to support quality improvement efforts.
 title: 'Bug Report: [Brief Description of the Issue]'
-labels: bug, documentation, enhancement, question
+labels: bug, documentation, enhancement, Feature, Improvement, question, Request
 assignees: nimaaghobadi
 
 ---
