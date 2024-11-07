@@ -93,7 +93,7 @@ The Automated Menu Management System gathers critical performance metrics to ana
 Contributions are welcomed! Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines on how to contribute to this project.
 
 ## License
-This project is licensed under the MIT License. For more details, see the [LICENSE.md](./LICENSE.md) file.
+This project is licensed under the MIT License. For more details, see the [LICENSE](./LICENSE) file.
 
 
 
