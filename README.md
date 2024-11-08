@@ -14,6 +14,7 @@ Automated Menu Management System is a C-based application designed to enhance th
 8. [Badges](#badges)
 9. [Contributing](#contributing)
 10. [License](#license)
+11. [Archive & Citation](#archive--citation)
 
 ## Features
 - Intuitive menu display
@@ -64,8 +65,11 @@ The Automated Menu Management System gathers critical performance metrics to ana
 ### Version 1.1.0
 - Added new features and enhancements.
 
-## Usage Examples
 
+### Version 1.2.0
+- Added **Archive & Citation** section in README with Software Heritage SWHID for permanent archival reference. 
+
+## Usage Examples
 ### Example 1: Placing an Order
 1. Start the application by running `./AutomatedMenuManagementSystem`.
 2. From the main menu, select the food category (e.g., Pizza, Drinks, Soups, Salads).
@@ -94,6 +98,14 @@ Contributions are welcomed! Please refer to the [CONTRIBUTING.md](./CONTRIBUTING
 
 ## License
 This project is licensed under the MIT License. For more details, see the [LICENSE](./LICENSE) file.
+
+## Archive & Citation
+
+This project is permanently archived in the [Software Heritage](https://www.softwareheritage.org/).
+
+- **Software Heritage ID (SWHID)**: [swh:1:rev:39d6fc0eef8d7e42cc72c64653ace4bd389e469c;origin=https://github.com/nimaaghobadi/AutomatedMenuManagementSystem;visit=swh:1:snp:1c6ff95d32cd2147abee7a22cf3f5c47c15f1045](https://archive.softwareheritage.org/swh:1:rev:39d6fc0eef8d7e42cc72c64653ace4bd389e469c/)
+
+This identifier provides a permanent reference to this version of the project in the Software Heritage archive.
 
 
 
